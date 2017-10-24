@@ -1,0 +1,16 @@
+
+{{#unless devoured}}
+<li class="noDev">
+	{{{burger_name}}}
+
+	<button class="devour" data-id="{{id}}" data-newdevour="{{devoured}}">
+		Devour
+	</button>
+</li>
+{{/unless}}
+
+{{#if devoured}}
+<li class="dev">
+	{{{burger_name}}}
+</li>
+{{/if}}
